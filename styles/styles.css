@@ -158,6 +158,88 @@ body>*{
     margin-bottom: 120px;
 }
 
+/* why choose section related design */
+.choose-section{
+    background-color: #230E3D;
+}
+.choose-container{
+    max-width: 1200px;
+    margin: 0 auto;    
+}
+.choose-container h2{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    padding-top: 120px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 275px);
+    gap: 30px;
+    padding-top:40px;
+}
+
+.choose-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 16px;
+}
+.audio-card{
+    max-width: 100%;
+    max-height: 100%;
+    padding: 107px 40px;
+    background-color: #351165;
+    border-radius: 40px;
+    grid-row: span 2;
+    grid-column: span 1;
+}
+.audio-card img,
+.mobile-card img, 
+.global-card img,
+.quality-card img,
+.resource-card img{
+    padding-bottom: 16px;
+}
+.audio-card p{
+    max-width: 300px;
+    line-height: 24px;
+}
+
+.mobile-card, .global-card, .quality-card{
+    max-width: 100%;
+    max-height: 100%;
+    padding: 40px 40px;
+    background-color: #351165;
+    border-radius: 40px;
+    grid-row: span 1;
+    grid-column: span 2;
+}
+.resource-card{
+    max-width: 100%;
+    max-height: 100%;
+    padding: 40px 40px;
+    background-color: #351165;
+    border-radius: 40px;
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+/* .primary-card{
+    grid-column: span 1;
+    grid-row: span 2;
+} */
+.secondary-card{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.third-gecos{
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+
+
 /* responsive related design */
 @media screen and (max-width:576px){
     .nav-container, .menu-container{
@@ -181,5 +263,19 @@ body>*{
     margin: 0 auto;
     font-size: 2rem;
     font-weight: 700;
-}
+    }
+    .card-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 400px);
+    gap: 30px;
+    }
+    .audio-card{
+    max-width: 100%;
+    max-height: 100%;
+    background-color: #351165;
+    border-radius: 40px;
+    grid-row: span 1;
+    grid-column: span 1;
+    }
 }
