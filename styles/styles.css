@@ -177,6 +177,7 @@ body>*{
     grid-template-rows: repeat(3, 275px);
     gap: 30px;
     padding-top:40px;
+    padding-bottom: 120px;
 }
 
 .choose-title{
@@ -273,6 +274,7 @@ body>*{
 .meet-section{
     max-width: 1200px;
     margin: 0 auto;
+    padding-bottom: 120px;
     /* border: 1px solid white; */
 }
 .meet-section h2{
@@ -295,6 +297,7 @@ body>*{
 }
 .host-container{
     max-width: 895px;
+    
 }
 .host-container h3{
     font-size: 2rem;
@@ -305,19 +308,50 @@ body>*{
     padding-top: 16px;
     line-height: 24px;
 }
-.logo-container{
+.social-container{
     align-items: center;
     gap: 10px;
     padding-top: 16px;
     
 }
-.logo-container img{
+.social-container img{
     max-width: 40px;
     max-height: 40px;
     border: 1px solid #533C72;
     padding: 10px;
     border-radius: 50px;
+}
 
+/* footer related design */
+footer{
+    background-image: url(../assets/footer-bg.png);
+    max-width: 1600px;
+    height: 412px;
+    position: relative;
+}
+.footer-container{
+    position: absolute;
+    left: 500px;
+    top: 120px;
+    text-align: center;
+}
+.footer-logo img{
+    width: 410px;
+    height: 60px;
+    padding-bottom: 30px;
+}
+.logo-container{
+    display: grid;
+    grid-template-columns :repeat(4, 1fr);
+    place-items: center;
+}
+.flex{
+    display: flex;
+    place-items: center;
+    gap: 10px; 
+}
+.footer-text{
+    padding-top: 35px;
 }
 
 
@@ -377,5 +411,16 @@ body>*{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    footer{
+    background-image: url(../assets/footer-bg.png);
+    max-width: 100%;
+    position: relative;
+    }
+    .footer-container{
+    position: absolute;
+    left:50px;
+    top: 120px;
+    /* text-align: center; */
     }
 }
