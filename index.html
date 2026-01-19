@@ -7,7 +7,7 @@
     <title>Assignment-02</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
-<body class="font-inter">
+<body class="inter-font">
     <header class="">
         <nav class="nav-container display-flex">
 
@@ -24,26 +24,50 @@
             </div>
         </nav>
         <section id="banner">
-            <div class="banner-container">
-                <img src="assets/microphone.png" alt="">
+            <div class="banner-container display-flex">
+                <div class="img-container">
+                  <img src="assets/microphone.png" alt="">
+                  <button id="badge">NEW</button>
+                </div> 
+                <div class="">
                 <h3 class="banner-title primary-color">TechWave</h3>
-                <p class="banner-text primary-color">Your daily dose of tech insights, productivity hacks, and personal growth</p>
-                <button class="btn"><i class="fa-brands fa-spotify"></i>Listen on Spotify</button>
-            <button class="btn"> <i class="fa-regular fa-envelope"></i>Subscribe </button>
-            </div> 
+                <p class="banner-text primary-color">Your daily dose of tech insights, productivity hacks, and personal growth</p> 
+                </div>
+                <div class=" button-container display-flex">
+                    <button class="btn"><i class="fa-brands fa-spotify"></i>Listen on Spotify</button>
+                <button class="btn"> <i class="fa-regular fa-envelope"></i>Subscribe </button>
+
+                </div>
+            </div>
         </section>
        
     </header>
     <main>
         <section class="podcast-container">
-            <h3 class="primary-color">About the Podcast</h3>
-            <p>TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.We break down complex topics into digestible insights, explore productivity strategies that actually work, and share stories of personal growth from industry leaders.</p>
-            <p>Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
+            <h3 class="podcast-title primary-color">About the Podcast</h3>
+            <p class="podcast-text primary-color">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. <br>We break down complex topics into digestible insights, explore productivity strategies that actually work,<br> and share stories of personal growth from industry leaders. <br><br><br><br>
+            Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
 
-            <div>
+            <div class="hr">
+
+            </div>
+
+            <div class="podcast-data">
                 <div>
-                    <h4>150k+</h4>
-                    <p>MONTHLY LISTENERS</p>
+                    <h4 class="seconday-color">150K+</h4>
+                    <p class="primary-color">MONTHLY LISTENERS</p>
+                </div>
+                <div>
+                    <h4 class="seconday-color">200+</h4>
+                    <p class="primary-color">EPOSIDES PUBLISHED</p>
+                </div>
+                <div>
+                    <h4 class="seconday-color">4.9*</h4>
+                    <p class="primary-color">AVERAGE RATING</p>
+                </div>
+                <div>
+                    <h4 class="seconday-color">50K+</h4>
+                    <p class="primary-color">INDUSTRY EXPART</p>
                 </div>
             </div>
         </section>
