@@ -189,13 +189,13 @@ body>*{
 .choose-container{
     width: 75%;
     max-width: 1200px;
-    margin: 0 auto;    
+    margin: 0 auto; 
+    padding-top: 120px;   
 }
 .choose-container h2{
     text-align: center;
     font-size: 3rem;
-    font-weight: 700;
-    padding-top: 120px;
+    font-weight: 700;  
 }
 .card-container{
     display: grid;
@@ -270,7 +270,6 @@ body>*{
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     align-items: center;
-    border: 1px solid white;
 }
 .features-card{
     max-width: 380px;
@@ -324,8 +323,7 @@ body>*{
     padding: 40px;
 }
 .host-container{
-    max-width: 895px;
-    
+    max-width: 895px;  
 }
 .host-container h3{
     font-size: 2rem;
@@ -447,5 +445,81 @@ footer{
     .podcast-data h4{
     font-size: 2.5rem;
     font-weight: 400;
+    }
+    .choose-container{
+    padding-top: 40px;  
+    }
+    .card-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* grid-template-rows: repeat(3, 275px); */
+    gap: 30px;
+    }
+    .choose-container h2{
+    font-size: 2rem;
+    font-weight: 400;  
+    }
+    .choose-title{
+    font-size: 1.5rem;
+    font-weight: 400;
+    }
+    .features-title{
+    font-size: 2rem;
+    font-weight: 400;
+    padding-top: 40px;
+    }
+    .features-data{
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 400px);
+    gap: 20px;
+    align-items: center;
+    }
+    .meet-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    }
+    .meet-container {
+    max-width: 95%;
+    background-color: rgba(53, 17, 101, 0.4);
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    text-align: center;
+    }
+    .host-container{
+        max-width: 560px;
+        padding: 44px; 
+    }
+    .host-container h3{
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-top: 0px;
+    }
+    .social-container{
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 16px; 
+    }
+    footer{
+    background-image: url(../assets/footer-bg.png);
+    max-width: 100%;
+    position: relative;
+    }
+    .footer-container{
+    position: absolute;
+    left:50px;
+    top: 120px;
+    /* text-align: center; */
+    }
+    .logo-container{
+    display: grid;
+    grid-template-columns :repeat(2, 1fr);
+    place-items: center;
+    gap: 30px;
 }
 }
