@@ -92,8 +92,6 @@ body>*{
     width: 350px;
     height: 350px;
     margin-top: 100px;
-    border: 1 px solid white;
-
 }
  .img-container img{
     padding-top: 80px;
@@ -402,7 +400,7 @@ footer{
    .menu{
     display: none;
    }
-   .button-container{
+   .nav-button{
     display: none;
    }
    #humberger-icon{
@@ -428,7 +426,6 @@ footer{
     flex-direction: column;
     position: absolute;
     left: 80px;
-    
     }
    .img-container{
     background-image: url(../assets/hero-circle.png);
