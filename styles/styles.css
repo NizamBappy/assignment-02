@@ -56,6 +56,9 @@ body>*{
     list-style: none;
     gap: 32px;
 }
+#humberger-icon{
+    display:none;
+}
 .menu li a{
     text-decoration: none;
     color: #FFFFFF;
@@ -248,6 +251,12 @@ body>*{
     max-width: 300px;
     line-height: 24px;
 }
+.audio-card pp {
+  animation-duration: 3s;
+  animation-name: slide-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
 
 
 
@@ -384,17 +393,21 @@ footer{
 
 /* responsive related design */
 @media screen and (max-width:576px){
-    .nav-container {
-    width: 100%;
-    flex-direction: column;
-    gap: 30px;
-    padding-top: 50px;
-    }
-    .menu-container {
-    flex-direction: column;
-    gap: 30px;
     
+    .menu-container img{
+     max-width: 150px;
+     max-height: 30px;
+     margin-left: 25px;
+    }
+   .menu{
+    display: none;
    }
+   .button-container{
+    display: none;
+   }
+   #humberger-icon{
+    display:inline;
+    }
    #banner{
     background-image: url(../assets/hero-bg.png);
     /* background-position: center;
@@ -404,12 +417,18 @@ footer{
     object-fit: cover;
     background-repeat: no-repeat;
     }
-   
+    .banner-title{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    font-weight: 400;
+    } 
    .banner-container{
     max-width: 400px;
     flex-direction: column;
     position: absolute;
     left: 80px;
+    
     }
    .img-container{
     background-image: url(../assets/hero-circle.png);
@@ -419,10 +438,11 @@ footer{
     height: 350px;
     margin-top: 100px;
     }
-    /* .banner-text{
+    .banner-text{
      padding-bottom: 24px;
-     max-width: 400px;
-    } */
+     text-align: center;
+     line-height: 24px;
+    }
     
     .podcast-container{
     margin: 0 auto;
@@ -433,9 +453,6 @@ footer{
     font-size: 2rem;
     font-weight: 400;
     }
-    /* .podcast-text{
-    width: 100%;
-    } */
     .hr{
     margin-top: 40px;
      }
