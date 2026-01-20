@@ -47,6 +47,17 @@ body>*{
 .menu-container img{
     max-width: 219px;
     max-height: 32px;
+    animation: logo-img 2s ease-in 1s 1;
+}
+ @keyframes logo-img {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 .menu {
     list-style: none;
